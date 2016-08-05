@@ -1,5 +1,5 @@
 -content_for :page_title do
-  =t('title-articles')
+  -t('title-articles')
 %table{:class => 'border'}
   %tr
     %td
@@ -11,4 +11,4 @@
       %td
         =link_to a.header, article_path(:id => a.id)
       %td
-        =a.article_body
+        = a.article_body

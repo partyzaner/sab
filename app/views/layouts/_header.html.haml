@@ -1,0 +1,13 @@
+%div{:class => 'header'}
+  %div{:class => 'login'}
+    -#= image_tag('GOPR0016.JPG')
+    - unless user_signed_in?
+      =link_to 'Login', new_user_session_path, :class => 'button'
+      =link_to 'Sing up', new_user_registration_path, :class => 'button'
+    - if user_signed_in?
+      =link_to 'Sign out', destroy_user_session_path, :class => 'button',  :method => :delete
+    =yield :login
+    %p{:class => 'notice'}
+    =notice
+    %p{:class => 'alert'}
+    =alert

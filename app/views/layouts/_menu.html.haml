@@ -1,0 +1,6 @@
+%div{:class => 'left_menu'}
+  =link_to 'Main page', landing_index_path, :class => 'menu_item'
+  %br
+  =link_to 'Articles', articles_path, :class => 'menu_item'
+  %br
+  =link_to 'New article', new_article_path, :class => 'menu_item' if user_signed_in?
