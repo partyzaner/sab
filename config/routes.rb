@@ -1,8 +1,6 @@
 Rails.application.routes.draw do
 
-
   resources :articles
-  resources :login
   get 'landing/index'
   root 'landing#index'
 

@@ -9,16 +9,19 @@
 
   %body
     %div{:class => 'container'}
-      %p{:class => 'notice'}
-      =notice
-      %p{:class => 'alert'}
-      =alert
 
       %div{:class => 'header'}
         -#= image_tag('GOPR0016.JPG')
         %div{:class => 'login'}
-          =link_to 'Login', new_user_session_path, :class => 'oval'
-          =link_to 'Sing up', new_user_registration_path, :class => 'oval'
+          = unless user_signed_in?
+            =link_to 'Login', new_user_session_path, :class => 'button'
+            =link_to 'Sing up', new_user_registration_path, :class => 'button'
+          = if user_signed_in?
+            =link_to 'Sign out', destroy_user_session_path, :class => 'button',  :method => :delete
+          %p{:class => 'notice'}
+          =notice
+          %p{:class => 'alert'}
+          =alert
       %div{:class => 'left_menu'}
         =link_to 'Main page', landing_index_path, :class => 'menu_item'
         %br
