@@ -17,10 +17,8 @@
       %div{:class => 'header'}
         -#= image_tag('GOPR0016.JPG')
         %div{:class => 'login'}
-          =link_to 'Login',login_index_path, :class => 'oval'
-
-          %a{:class => 'oval'}
-            Sign Up
+          =link_to 'Login', new_user_session_path, :class => 'oval'
+          =link_to 'Sing up', new_user_registration_path, :class => 'oval'
       %div{:class => 'left_menu'}
         =link_to 'Main page', landing_index_path, :class => 'menu_item'
         %br
