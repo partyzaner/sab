@@ -9,6 +9,11 @@
 
   %body
     %div{:class => 'container'}
+      %p{:class => 'notice'}
+      =notice
+      %p{:class => 'alert'}
+      =alert
+
       %div{:class => 'header'}
         -#= image_tag('GOPR0016.JPG')
         %div{:class => 'login'}
