@@ -1,0 +1,14 @@
+-content_for :page_title do
+  =t('title-articles')
+%table{:class => 'border'}
+  %tr
+    %td
+      HEADER
+    %td
+      CONTENT
+  - @articles.each do |a|
+    %tr
+      %td
+        =link_to a.header, article_path(:id => a.id)
+      %td
+        =a.article_body

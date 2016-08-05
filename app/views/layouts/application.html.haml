@@ -1,0 +1,26 @@
+!!!
+%html{:lang =>'en'}
+  %head
+    %title
+      =yield :page_title
+    =csrf_meta_tags
+    =stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    =javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+
+  %body
+    %div{:class => 'container'}
+      %div{:class => 'header'}
+        -#= image_tag('GOPR0016.JPG')
+        %div{:class => 'login'}
+          =link_to 'Login',login_index_path, :class => 'oval'
+
+          %a{:class => 'oval'}
+            Sign Up
+      %div{:class => 'left_menu'}
+        =link_to 'Main page', landing_index_path, :class => 'menu_item'
+        %br
+        =link_to 'Articles', articles_path, :class => 'menu_item'
+        %br
+        =link_to 'New article', new_article_path, :class => 'menu_item'
+      %div{:class => 'main_content'}
+        =yield

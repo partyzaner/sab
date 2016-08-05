@@ -1,0 +1,131 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+$red: #ff0000;
+
+.red {
+  color: $red;
+}
+
+body {
+  background-color: #aaaaaa;
+}
+
+.container {
+  width: 100%;
+  clear: both;
+  text-align: center;
+}
+
+div.header {
+  height: 300px;
+  //margin-left: 30px;
+  background-image: image-url("GOPR0016.JPG");
+  clear: both;
+}
+
+div.login {
+  float: right;
+  margin: 5% 10%;
+  clear: both;
+}
+
+div.left_menu {
+  float: left;
+  width: 20%;
+  text-align: left;
+  margin-left: 3%;
+}
+
+div.main_content {
+  float: left;
+  width: 75%;
+  margin: 0 auto;
+  padding: 2% 0 0 2%;
+  //background-image: image-url("GOPR0016.JPG");
+}
+
+table.border {
+  border-top-right-radius: 5%;
+  border-width: medium;
+  color: #730E15;
+  border-collapse: collapse;
+}
+
+#labels {
+  width: 40%;
+}
+
+#inputs {
+  width: 40%;
+}
+
+h1 {
+  float: left;
+  font-size: 200%;
+  width: 100%;
+  text-align: left;
+}
+
+td, th {
+  padding: 3px;
+  border: 2px solid #800015;
+  color: black;
+}
+
+a.menu_item {
+  background-color:#77b55a;
+  font-family:Arial;
+  font-size:17px;
+  font-weight:bold;
+  padding:6px 12px;
+  margin: 0 0 -18px 0;
+  text-decoration:none;
+  color:#ffffff;
+  border:2px solid #4b8f29;
+  display:block;
+  text-shadow:0px 1px 0px #5b8a3c;
+
+}
+
+a.oval {
+  -moz-box-shadow: 0px 10px 14px -7px #3e7327;
+  -webkit-box-shadow: 0px 10px 14px -7px #3e7327;
+  box-shadow: 0px 10px 14px -7px #3e7327;
+  background-color:#77b55a;
+  -moz-border-radius:25px;
+  -webkit-border-radius:25px;
+  border-radius:25px;
+  border:1px solid #4b8f29;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:17px;
+  font-weight:bold;
+  padding:6px 12px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #5b8a3c;
+  margin: 0 0 15px 10px;
+}
+
+.oval:hover {
+  background-color:#73b054;
+}
+
+.oval:active {
+  position:relative;
+  top:1px;
+}

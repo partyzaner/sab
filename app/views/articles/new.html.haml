@@ -1,0 +1,23 @@
+-content_for :page_title do
+  =t('title-new-article')
+  %h1 Add article
+
+%div{:class => 'Create', :id => 'create_article'}
+=form_for :article, url: articles_path do |f|
+  =if @article.errors.any?
+    %div
+      =pluralize(@article.errors.count, 'error')
+    %ul
+      =@article.errors.full_messages.each do |msg|
+        %li
+          =msg.to_s
+  %div{:id => 'labels'}
+    =f.label :article_header_label, 'Article name', :class => 'header_label'
+    %br
+    =f.label :article_body_label, 'Article body', :class => 'article_area'
+  %div{:id => 'inputs'}
+    =f.text_field :header
+    %br
+    =f.text_area :article_body
+    %br
+    =f.submit

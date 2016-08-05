@@ -1,0 +1,16 @@
+-content_for :page_title do
+  =t('title-single-article')
+  =@article.id
+%h1
+  Id is
+  =@article.id
+%div
+  %table{:class => 'border'}
+    %tr
+      %td Title:
+      %td
+        =@article.header
+    %tr
+      %td Body:
+      %td
+        =@article.article_body

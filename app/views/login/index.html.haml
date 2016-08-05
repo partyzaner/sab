@@ -1,0 +1,7 @@
+-content_for :page_title do
+  =t('title-new-article')
+%h1 Login please
+=form_for :login, url: login_path do |f|
+  =f.text_field :user
+  =f.text_field :pass
+  =f.submit 'Login'
