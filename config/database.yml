@@ -14,7 +14,7 @@ development:
   encoding: utf8
   database: sabaleuski
   username: root
-  password: 1230212
+  password: 123
   host: 127.0.0.1
   port: 3306
 
