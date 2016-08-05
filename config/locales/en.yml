@@ -20,6 +20,7 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
+  title-default: "sabaleuski.com"
   title-index: "sabaleuski.com - Main page"
   title-articles: "sabaleuski.com - Articles"
   title-new-article: "sabaleuski.com - New Article"
