@@ -1,9 +1,9 @@
 # config valid only for current version of Capistrano
 lock '3.6.0'
 
-set '188.166.114.184', port: 80, roles: [:web, :app, :db], primary: true
+set '188.166.114.184', port: 22, roles: [:web, :app, :db], primary: true
 
-set :application, 'sabaleuski'
+set :application, 'sab'
 set :repo_url, 'git@github.com:partyzaner/sab.git'
 set :user, 'deploy'
 set :puma_threads, [4, 16]
