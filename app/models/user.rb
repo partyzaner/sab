@@ -6,5 +6,6 @@ class User < ApplicationRecord
          :recoverable,
          :rememberable,
          :trackable,
-         :validatable
+         :validatable,
+         :timeoutable, :timeout_in => 10.minutes
 end

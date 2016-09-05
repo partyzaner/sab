@@ -12,7 +12,18 @@
  *
  *= require_tree .
  *= require_self
+ //*= require gallery/responsive/elastislide
+ //*= require gallery/responsive
+ //*= require gallery/slideshow
+ //*= require gallery/galleria/classic
+ //*= require gallery/touch_touch
  */
+@import 'gallery/responsive/elastislide';
+@import 'gallery/responsive';
+@import 'gallery/slideshow';
+@import 'gallery/galleria/classic';
+@import 'gallery/touch_touch';
+
 $red: #ff0000;
 
 .red {
@@ -128,4 +139,13 @@ a.menu_item {
 .oval:active {
   position:relative;
   top:1px;
+}
+
+input {
+  padding: 3px;
+}
+
+video {
+  height: 500px;
+  width: 500px;
 }
