@@ -56,6 +56,11 @@ group :development do
   gem 'capistrano3-puma', require: false
 end
 
+group :production do
+  gem 'web-console'
+  gem 'listen', '~> 3.0.5'
+end
+
 gem 'puma'
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
