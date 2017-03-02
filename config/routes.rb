@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   get 'landing/index'
   root 'landing#index'
 
+  get 'carousel/index'
+
   devise_for :users
   get 'persons/profile'
 

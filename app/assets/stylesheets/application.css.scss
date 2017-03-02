@@ -18,6 +18,9 @@
  //*= require gallery/galleria/classic
  //*= require gallery/touch_touch
  */
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
 @import 'gallery/responsive/elastislide';
 @import 'gallery/responsive';
 @import 'gallery/slideshow';
@@ -41,7 +44,7 @@ body {
 }
 
 div.header {
-  height: 300px;
+  height: 100px;
   //margin-left: 30px;
   background-image: image-url("GOPR0016.JPG");
   clear: both;

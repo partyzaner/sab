@@ -11,6 +11,8 @@ gem 'mysql2'
 # gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
+gem 'bootstrap-sass', '~> 3.3.6'
+gem 'angularjs-rails'
 gem 'haml'
 gem 'rails-i18n', '~> 5.0.0'
 gem 'devise'
@@ -40,6 +42,11 @@ gem 'jbuilder', '~> 2.5'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
+end
+
+group :test do
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
 end
 
 group :development do
